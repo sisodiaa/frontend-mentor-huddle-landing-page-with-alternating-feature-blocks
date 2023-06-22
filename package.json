@@ -1,0 +1,21 @@
+{
+  "name": "huddle-landing-page-with-alternating-feature-blocks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sisodiaa/frontend-mentor-huddle-landing-page-with-alternating-feature-blocks.git",
+  "author": "Abhishek Sisodia <mail.abhisheksisodia@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^2.6.6"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-astro": "^0.10.0"
+  }
+}
