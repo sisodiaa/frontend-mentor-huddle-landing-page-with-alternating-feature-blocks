@@ -7,7 +7,7 @@ export default defineConfig({
     assets: true,
   },
   build: {
-    assetsPrefix:
-      "https://sisodiaa.github.io/frontend-mentor-huddle-landing-page-with-alternating-feature-blocks",
+    assets:
+      "frontend-mentor-huddle-landing-page-with-alternating-feature-blocks/_astro",
   },
 });
