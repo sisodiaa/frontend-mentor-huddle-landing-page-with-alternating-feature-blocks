@@ -7,7 +7,7 @@ import favicon from "../assets/images/favicon-32x32.png";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href={favicon.src}>
+  <link rel="icon" type="image/png" sizes="32x32" href=`${import.meta.env.REPO_NAME}${favicon.src}`>
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 </head>
