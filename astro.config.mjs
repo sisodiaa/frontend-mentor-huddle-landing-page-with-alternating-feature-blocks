@@ -6,8 +6,4 @@ export default defineConfig({
   experimental: {
     assets: true,
   },
-  build: {
-    assets:
-      "frontend-mentor-huddle-landing-page-with-alternating-feature-blocks/_astro",
-  },
 });
