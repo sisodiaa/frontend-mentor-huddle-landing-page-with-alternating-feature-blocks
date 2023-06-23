@@ -1,0 +1,79 @@
+---
+import brandLogo from "../assets/images/logo.svg";
+import iconLocation from "../assets/images/icon-location.svg";
+import iconPhone from "../assets/images/icon-phone.svg";
+import iconEmail from "../assets/images/icon-email.svg";
+import iconFacebook from "../assets/images/icon-facebook.svg";
+import iconTwitter from "../assets/images/icon-twitter.svg";
+import iconInstagram from "../assets/images/icon-instagram.svg";
+---
+
+<footer>
+  <img
+    src=`${import.meta.env.REPO_NAME}${brandLogo.src}`
+    alt="Logo of Huddle"
+  />
+  <div>
+    <ul id="info">
+      <li>
+        <img
+          src=`${import.meta.env.REPO_NAME}${iconLocation.src}`
+          alt="Icon for location"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+      </li>
+      <li>
+        <img
+          src=`${import.meta.env.REPO_NAME}${iconPhone.src}`
+          alt="Icon for Phone"
+        />
+        <p>+1-543-123-4567</p>
+      </li>
+      <li>
+        <img
+          src=`${import.meta.env.REPO_NAME}${iconEmail.src}`
+          alt="Icon for email address"
+        />
+        <p>example@huddle.com</p>
+      </li>
+    </ul>
+
+    <ul class="links">
+      <li>About Us</li>
+      <li>What We Do</li>
+      <li>FAQ</li>
+    </ul>
+
+    <ul class="links">
+      <li>Career</li>
+      <li>Blog</li>
+      <li>Contact Us</li>
+    </ul>
+
+    <ul id="icons">
+      <li>
+        <img
+          src=`${import.meta.env.REPO_NAME}${iconFacebook.src}`
+          alt="Icon for Facebook"
+        />
+      </li>
+      <li>
+        <img
+          src=`${import.meta.env.REPO_NAME}${iconTwitter.src}`
+          alt="Icon for Twitter"
+        />
+      </li>
+      <li>
+        <img
+          src=`${import.meta.env.REPO_NAME}${iconInstagram.src}`
+          alt="Icon for Instagram"
+        />
+      </li>
+    </ul>
+  </div>
+
+  <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+</footer>
