@@ -2,7 +2,7 @@
 import brandLogo from "../assets/images/logo.svg";
 ---
 
-<nav>
+<nav class="container">
   <a href="/">
     <img
       src=`${import.meta.env.REPO_NAME}${brandLogo.src}`
@@ -15,3 +15,82 @@ import brandLogo from "../assets/images/logo.svg";
     </li>
   </ul>
 </nav>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.25rem;
+  }
+
+  a {
+    flex-basis: 6rem;
+  }
+
+  button {
+    background-color: white;
+    border: none;
+    padding: 0.3rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.66rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+
+  button:hover {
+    cursor: pointer;
+    color: var(--color-grayish-blue);
+  }
+
+  @media only screen and (min-width: 640px) {
+    nav {
+      padding-top: 1.6rem;
+    }
+
+    button {
+      padding: 0.4rem 1.6rem;
+      font-size: 0.68rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    nav {
+      padding-top: 2rem;
+    }
+
+    a {
+      flex-basis: 8.5rem;
+    }
+
+    button {
+      padding: 0.5rem 2rem;
+      font-size: 0.7rem;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    nav {
+      padding-top: 2.5rem;
+    }
+
+    a {
+      flex-basis: 11rem;
+    }
+
+    button {
+      padding: 0.6rem 2.5rem;
+      font-size: 0.72rem;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    nav {
+      padding-top: 3rem;
+    }
+
+    button {
+      padding: 0.75rem 3rem;
+      font-size: 0.75rem;
+    }
+  }
+</style>
