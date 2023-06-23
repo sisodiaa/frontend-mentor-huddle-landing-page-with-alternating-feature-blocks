@@ -1,17 +1,77 @@
 ---
+import "@fontsource/poppins";
+import "@fontsource/open-sans";
+
 import favicon from "../assets/images/favicon-32x32.png";
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href=`${import.meta.env.REPO_NAME}${favicon.src}`>
-  
-  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
-</head>
-<body>
-  <slot />
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href=`${import.meta.env.REPO_NAME}${favicon.src}`
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
+
+<style is:global>
+  :root {
+    --color-pink: hsl(322, 100%, 66%);
+    --color-pale-cyan: hsl(193, 100%, 96%);
+    --color-dark-cyan: hsl(192, 100%, 9%);
+    --color-grayish-blue: hsl(208, 11%, 55%);
+  }
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 112.5%;
+  }
+
+  body {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  button {
+    font-weight: 700;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  ul {
+    list-style: none;
+  }
+</style>
