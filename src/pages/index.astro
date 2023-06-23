@@ -20,3 +20,19 @@ import Footer from "@components/Footer.astro";
 
   <Footer />
 </Layout>
+
+<style>
+  header {
+    background-color: var(--color-pale-cyan);
+    background-image: url("../assets/images/bg-hero-mobile.svg");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    header {
+      background-image: url("../assets/images/bg-hero-desktop.svg");
+    }
+  }
+</style>
