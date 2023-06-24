@@ -1,5 +1,5 @@
 ---
-import brandLogo from "../assets/images/logo.svg";
+import brandLogo from "../assets/images/logo-white.svg";
 import iconLocation from "../assets/images/icon-location.svg";
 import iconPhone from "../assets/images/icon-phone.svg";
 import iconEmail from "../assets/images/icon-email.svg";
@@ -9,71 +9,231 @@ import iconInstagram from "../assets/images/icon-instagram.svg";
 ---
 
 <footer>
-  <img
-    src=`${import.meta.env.REPO_NAME}${brandLogo.src}`
-    alt="Logo of Huddle"
-  />
-  <div>
-    <ul id="info">
-      <li>
-        <img
-          src=`${import.meta.env.REPO_NAME}${iconLocation.src}`
-          alt="Icon for location"
-        />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </p>
-      </li>
-      <li>
-        <img
-          src=`${import.meta.env.REPO_NAME}${iconPhone.src}`
-          alt="Icon for Phone"
-        />
-        <p>+1-543-123-4567</p>
-      </li>
-      <li>
-        <img
-          src=`${import.meta.env.REPO_NAME}${iconEmail.src}`
-          alt="Icon for email address"
-        />
-        <p>example@huddle.com</p>
-      </li>
-    </ul>
+  <section class="container">
+    <picture>
+      <img
+        src=`${import.meta.env.REPO_NAME}${brandLogo.src}`
+        alt="Logo of Huddle"
+      />
+    </picture>
 
-    <ul class="links">
-      <li>About Us</li>
-      <li>What We Do</li>
-      <li>FAQ</li>
-    </ul>
+    <div>
+      <ul id="info">
+        <li>
+          <img
+            src=`${import.meta.env.REPO_NAME}${iconLocation.src}`
+            alt="Icon for Location"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </li>
+        <li>
+          <img
+            src=`${import.meta.env.REPO_NAME}${iconPhone.src}`
+            alt="Icon for Phone"
+          />
+          <p>+1-543-123-4567</p>
+        </li>
+        <li>
+          <img
+            src=`${import.meta.env.REPO_NAME}${iconEmail.src}`
+            alt="Icon for Email address"
+          />
+          <p>example@huddle.com</p>
+        </li>
+      </ul>
 
-    <ul class="links">
-      <li>Career</li>
-      <li>Blog</li>
-      <li>Contact Us</li>
-    </ul>
+      <ul class="links links--one">
+        <li>About Us</li>
+        <li>What We Do</li>
+        <li>FAQ</li>
+      </ul>
 
-    <ul id="icons">
-      <li>
-        <img
-          src=`${import.meta.env.REPO_NAME}${iconFacebook.src}`
-          alt="Icon for Facebook"
-        />
-      </li>
-      <li>
-        <img
-          src=`${import.meta.env.REPO_NAME}${iconTwitter.src}`
-          alt="Icon for Twitter"
-        />
-      </li>
-      <li>
-        <img
-          src=`${import.meta.env.REPO_NAME}${iconInstagram.src}`
-          alt="Icon for Instagram"
-        />
-      </li>
-    </ul>
-  </div>
+      <ul class="links links--two">
+        <li>Career</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+      </ul>
 
-  <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+      <ul id="icons">
+        <li>
+          <img
+            src=`${import.meta.env.REPO_NAME}${iconFacebook.src}`
+            alt="Icon for Facebook"
+          />
+        </li>
+        <li>
+          <img
+            src=`${import.meta.env.REPO_NAME}${iconTwitter.src}`
+            alt="Icon for Twitter"
+          />
+        </li>
+        <li>
+          <img
+            src=`${import.meta.env.REPO_NAME}${iconInstagram.src}`
+            alt="Icon for Instagram"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+  </section>
 </footer>
+
+<style>
+  footer {
+    margin-top: -3rem;
+    padding-top: 8rem;
+    background-color: var(--color-dark-cyan);
+  }
+
+  picture {
+    display: block;
+    width: 9.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul#info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  ul#info > li {
+    display: flex;
+    color: white;
+    font-size: 0.889rem;
+    gap: 1.5rem;
+    line-height: 1.5;
+    max-width: 40rem;
+  }
+
+  img[alt="Icon for Location"] {
+    margin-top: 0.25rem;
+    height: 1rem;
+    width: auto;
+  }
+
+  img[alt="Icon for Phone"] {
+    margin-top: 0.25rem;
+    height: 0.875rem;
+    width: auto;
+  }
+
+  img[alt="Icon for Email address"] {
+    margin-top: 0.25rem;
+    height: 0.75rem;
+    width: auto;
+  }
+
+  ul.links {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1rem;
+    font-size: 0.889rem;
+  }
+
+  ul.links > li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  ul.links.links--one {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  ul.links.links--two {
+    margin-bottom: 3rem;
+  }
+
+  ul#icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  ul#icons li {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.4rem;
+    transition: all 0.2s;
+  }
+
+  ul#icons li:hover {
+    cursor: pointer;
+    border-color: var(--color-pink);
+    filter: invert(48%) sepia(97%) saturate(2305%) hue-rotate(296deg)
+      brightness(104%) contrast(102%);
+  }
+
+  ul#icons img {
+    height: 0.875rem;
+    width: auto;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+      brightness(102%) contrast(102%);
+  }
+
+  section > p {
+    padding-bottom: 2rem;
+    font-size: 0.6rem;
+    color: white;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    footer {
+      margin-top: -5.25rem;
+      padding-top: 11rem;
+    }
+
+    section.container {
+      width: 78%;
+    }
+
+    picture {
+      display: block;
+      width: 12.5rem;
+      margin-bottom: 2rem;
+    }
+
+    div {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    ul#info {
+      flex: 0 1 22.5rem;
+    }
+
+    ul.links.links--one {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    ul.links.links--two {
+      margin-bottom: 0;
+    }
+
+    ul#icons {
+      margin-bottom: 0rem;
+      align-self: self-start;
+    }
+
+    section > p {
+      text-align: right;
+      font-size: 0.7rem;
+    }
+  }
+</style>
