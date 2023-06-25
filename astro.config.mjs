@@ -6,4 +6,13 @@ export default defineConfig({
   experimental: {
     assets: true,
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          assetFileNames: "assets/[name][extname]",
+        },
+      },
+    },
+  },
 });
